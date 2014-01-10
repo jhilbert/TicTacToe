@@ -9,6 +9,18 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    IBOutlet UIView *myLabelOne;
+    IBOutlet UIView *myLabelTwo;
+    __weak IBOutlet UILabel *myLableThree;
+    __weak IBOutlet UILabel *myLabelFour;
+    __weak IBOutlet UILabel *myLabelFive;
+    __weak IBOutlet UILabel *myLabelSix;
+    __weak IBOutlet UILabel *myLabelSeven;
+    __weak IBOutlet UILabel *myLabelEight;
+    __weak IBOutlet UILabel *myLabelNine;
+    __weak IBOutlet UILabel *whichPlayerLabel;
+}
 
 @end
 
