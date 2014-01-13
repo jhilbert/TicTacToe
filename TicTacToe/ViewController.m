@@ -12,67 +12,25 @@
 @interface ViewController ()
 {
     __weak IBOutlet UILabel *countDownLabel;
-    __weak IBOutlet UILabel *myLabelOne;
-    __weak IBOutlet UILabel *myLabelTwo;
-    __weak IBOutlet UILabel *myLabelThree;
-    __weak IBOutlet UILabel *myLabelFour;
-    __weak IBOutlet UILabel *myLabelFive;
-    __weak IBOutlet UILabel *myLabelSix;
-    __weak IBOutlet UILabel *myLabelSeven;
-    __weak IBOutlet UILabel *myLabelEight;
-    __weak IBOutlet UILabel *myLabelNine;
     __weak IBOutlet UILabel *nextPlayerLabel;
-    
-    
     __weak IBOutlet UIButton *gameOverButton;
-    
     
     NSMutableArray *fields;
     
     CGAffineTransform defaultTransform;
-    
     
     NSTimer *myTimer;
     int countdown;
     BOOL timerActive;
     
     TicTacToeBoard *ttt;
-    NSInteger foundAt;
-    UILabel *myHelperLabel;
+    NSInteger makeMoveToThisField;
+    UILabel *hitLabel;
 }
 
 @end
 
 @implementation ViewController
-
-- (void)resetTimer
-{
-    [myTimer invalidate];
-    myTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(oneSec:) userInfo:nil repeats:YES];
-    timerActive = YES;
-    countdown = 10;
-    countDownLabel.text = [NSString stringWithFormat:@"%i", countdown];
-    countDownLabel.hidden = NO;
-}
-
--(void)oneSec:(NSTimer *)timer {
-    
-    if (timerActive == YES){
-        countdown--;
-        if (countdown == 0)
-        {
-            [ttt flipPlayer];
-            [self updateButtonForNextPlayer];
-            [self computerMakeMove];
-            
-            [self resetTimer];
-        }
-        else{
-            countDownLabel.text = [NSString stringWithFormat:@"%i", countdown];
-        }
-    }
-    
-}
 
 - (void)viewDidLoad
 {
@@ -113,7 +71,37 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated {
+    // reactivate timer when coming back from any other View
     timerActive = YES;
+}
+
+- (void)resetTimer
+{
+    [myTimer invalidate];
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(oneSec:) userInfo:nil repeats:YES];
+    timerActive = YES;
+    countdown = 10;
+    countDownLabel.text = [NSString stringWithFormat:@"%i", countdown];
+    countDownLabel.hidden = NO;
+}
+
+-(void)oneSec:(NSTimer *)timer {
+    
+    if (timerActive == YES){
+        countdown--;
+        if (countdown == 0)
+        {
+            [ttt flipPlayer];
+            [self updateButtonForNextPlayer];
+            [self computerMakeMove];
+            if (!ttt.gameOver)
+                [self resetTimer];
+        }
+        else{
+            countDownLabel.text = [NSString stringWithFormat:@"%i", countdown];
+        }
+    }
+    
 }
 
 - (void)updateButtonForNextPlayer
@@ -134,15 +122,13 @@
     if (_numberOfPlayers == 1 && ttt.numberOfMove < 8)
     {
         
-        UILabel *hit;
+        makeMoveToThisField = [ttt computerMoves];
+        [ttt setField:makeMoveToThisField marker:@"O"];
         
-        foundAt = [ttt computerMoves];
-        [ttt setField:foundAt marker:@"O"];
+        hitLabel = [fields objectAtIndex:makeMoveToThisField-1];
+        hitLabel.backgroundColor = nextPlayerLabel.backgroundColor;
         
-        hit = [fields objectAtIndex:foundAt-1];
-        hit.backgroundColor = nextPlayerLabel.backgroundColor;
-        
-        [self makeMove:hit];
+        [self makeMove:hitLabel];
     }
 }
 
@@ -192,12 +178,12 @@
         
         if (panGestureRegocnizer.state == UIGestureRecognizerStateEnded)
         {
-            UILabel *hit = nil;
-            hit = [self findLabelUsingPoint:myPoint];
+            hitLabel = nil;
+            hitLabel = [self findLabelUsingPoint:myPoint];
             
-            if ([ttt setField:foundAt marker:ttt.nextPlayer] == YES)
+            if ([ttt setField:makeMoveToThisField marker:ttt.nextPlayer] == YES)
             {
-                [self makeMove:hit];
+                [self makeMove:hitLabel];
                 [self computerMakeMove];
                 
             }
@@ -224,11 +210,11 @@
 {
     
     UILabel *foundLabel = nil;
-    foundAt = 0;
+    makeMoveToThisField = 0;
     
     for (UILabel *label in fields)
     {
-        foundAt++;
+        makeMoveToThisField++;
         if (CGRectContainsPoint(label.frame, myPoint))
         {
             foundLabel = label;

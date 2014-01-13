@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kek-XD-rfZ">
-                                <rect key="frame" x="80" y="50" width="160" height="160"/>
+                                <rect key="frame" x="80" y="100" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -23,7 +23,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PqC-iv-aHL">
-                                <rect key="frame" x="80" y="250" width="160" height="160"/>
+                                <rect key="frame" x="80" y="300" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,15 +159,6 @@
                     <connections>
                         <outlet property="countDownLabel" destination="dzv-0f-SPF" id="YW0-ic-DjU"/>
                         <outlet property="gameOverButton" destination="Anc-ip-pWV" id="Xao-Z9-k3E"/>
-                        <outlet property="myLabelEight" destination="uCF-Fz-ey2" id="yUn-a8-7Me"/>
-                        <outlet property="myLabelFive" destination="PqE-Bj-zL1" id="Hz3-Ga-B55"/>
-                        <outlet property="myLabelFour" destination="tTH-Of-5Ve" id="Rxf-tW-yMn"/>
-                        <outlet property="myLabelNine" destination="zop-9a-nzA" id="4m1-Oc-Z4W"/>
-                        <outlet property="myLabelOne" destination="Xup-nE-OoL" id="Xng-KU-Cd3"/>
-                        <outlet property="myLabelSeven" destination="mbf-jI-F9Q" id="uZZ-OB-F6j"/>
-                        <outlet property="myLabelSix" destination="6Ke-Dq-ZL8" id="art-xc-emm"/>
-                        <outlet property="myLabelThree" destination="Vmf-OR-R03" id="yag-I1-VKS"/>
-                        <outlet property="myLabelTwo" destination="2TP-Wv-PFZ" id="SIS-bb-XRp"/>
                         <outlet property="nextPlayerLabel" destination="5Q4-af-6pi" id="4yT-Rr-ED1"/>
                         <segue destination="0mn-uz-I4U" kind="push" identifier="Help" id="7sH-C1-ynE"/>
                     </connections>
@@ -231,6 +222,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="kZW-bn-83A"/>
+        <segue reference="jkM-b8-bFW"/>
     </inferredMetricsTieBreakers>
 </document>
