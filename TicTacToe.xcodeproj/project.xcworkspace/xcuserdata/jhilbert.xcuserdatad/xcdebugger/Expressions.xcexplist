@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TicTacToeBoard getField:]:TicTacToeBoard.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.fields objectAtIndex:0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TicTacToeBoard computerMoves]:TicTacToeBoard.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[[extract componentsSeparatedByString:@&quot;X&quot;] count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController computerMoves]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "field.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController viewDidLoad]:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TicTacToeBoard init]:TicTacToeBoard.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TicTacToeBoard prepareForPatternCheck]:TicTacToeBoard.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "myMatchingPattern.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController findLabelUsingPoint:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "foundLabel.backgroundColor">
+            </PersistentString>
+            <PersistentString
+               value = "defaultColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController onDrag:]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "ttt.numberOfMove">
+            </PersistentString>
+            <PersistentString
+               value = "[ttt whoOne]">
+            </PersistentString>
+            <PersistentString
+               value = "myLabelTwo.backgroundColor">
+            </PersistentString>
+            <PersistentString
+               value = "hit.backgroundColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TicTacToeBoard setField:marker:]:TicTacToeBoard.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[currentMarker isEqualToString:@&quot; &quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889699C51881A97400190783 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889699C41881A97400190783 /* CheckMate.framework */; };
+		889699C81881A9F500190783 /* TTTField.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699C71881A9F500190783 /* TTTField.png */; };
+		889699CB1881B11E00190783 /* TTTXBlue2.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699C91881B11D00190783 /* TTTXBlue2.png */; };
+		889699CC1881B11E00190783 /* TTTORed.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699CA1881B11D00190783 /* TTTORed.png */; };
+		889699CE1881B7AD00190783 /* TTTGameOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699CD1881B7AD00190783 /* TTTGameOver.png */; };
+		889699D11882320100190783 /* StartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889699D01882320100190783 /* StartScreenViewController.m */; };
+		889699D31882345800190783 /* TTTHelp.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699D21882345800190783 /* TTTHelp.png */; };
+		889699D61882355200190783 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889699D51882355200190783 /* HelpViewController.m */; };
+		889699D91882646D00190783 /* TicTacToeBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 889699D81882646D00190783 /* TicTacToeBoard.m */; };
+		889699DD18828A1400190783 /* TTTGameOverDraw.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699DA18828A1400190783 /* TTTGameOverDraw.png */; };
+		889699DE18828A1400190783 /* TTTGameOverPlayerO.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699DB18828A1400190783 /* TTTGameOverPlayerO.png */; };
+		889699DF18828A1400190783 /* TTTGameOverPlayerX.png in Resources */ = {isa = PBXBuildFile; fileRef = 889699DC18828A1400190783 /* TTTGameOverPlayerX.png */; };
+		88A832AF18838C5500033037 /* TTTTwoPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A832AC18838C5500033037 /* TTTTwoPlayer.png */; };
+		88A832B018838C5500033037 /* TTTOnePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A832AD18838C5500033037 /* TTTOnePlayer.png */; };
+		88A832B118838C5500033037 /* TTTiPhone480x320.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A832AE18838C5500033037 /* TTTiPhone480x320.png */; };
 		AA4B963C1880829B00B178B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B963B1880829B00B178B2 /* Foundation.framework */; };
 		AA4B963E1880829B00B178B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B963D1880829B00B178B2 /* CoreGraphics.framework */; };
 		AA4B96401880829B00B178B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B963F1880829B00B178B2 /* UIKit.framework */; };
@@ -21,7 +36,6 @@
 		AA4B965D1880829B00B178B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B963F1880829B00B178B2 /* UIKit.framework */; };
 		AA4B96651880829B00B178B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA4B96631880829B00B178B2 /* InfoPlist.strings */; };
 		AA4B96671880829B00B178B2 /* TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4B96661880829B00B178B2 /* TicTacToeTests.m */; };
-		AA4B96711880A4A500B178B2 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B96701880A4A500B178B2 /* CheckMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		889699C41881A97400190783 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../../../Downloads/CheckMate.framework; sourceTree = "<group>"; };
+		889699C71881A9F500190783 /* TTTField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTField.png; path = ../../../../Pictures/Pics4Games/TTTField.png; sourceTree = "<group>"; };
+		889699C91881B11D00190783 /* TTTXBlue2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTXBlue2.png; path = ../../../../Pictures/Pics4Games/TTTXBlue2.png; sourceTree = "<group>"; };
+		889699CA1881B11D00190783 /* TTTORed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTORed.png; path = ../../../../Pictures/Pics4Games/TTTORed.png; sourceTree = "<group>"; };
+		889699CD1881B7AD00190783 /* TTTGameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTGameOver.png; path = ../../../../Pictures/Pics4Games/TTTGameOver.png; sourceTree = "<group>"; };
+		889699CF1882320100190783 /* StartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScreenViewController.h; sourceTree = "<group>"; };
+		889699D01882320100190783 /* StartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScreenViewController.m; sourceTree = "<group>"; };
+		889699D21882345800190783 /* TTTHelp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTHelp.png; path = ../../../../Pictures/Pics4Games/TTTHelp.png; sourceTree = "<group>"; };
+		889699D41882355200190783 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		889699D51882355200190783 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		889699D71882646D00190783 /* TicTacToeBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicTacToeBoard.h; sourceTree = "<group>"; };
+		889699D81882646D00190783 /* TicTacToeBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicTacToeBoard.m; sourceTree = "<group>"; };
+		889699DA18828A1400190783 /* TTTGameOverDraw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTGameOverDraw.png; path = ../../../../Pictures/Pics4Games/TTTGameOverDraw.png; sourceTree = "<group>"; };
+		889699DB18828A1400190783 /* TTTGameOverPlayerO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTGameOverPlayerO.png; path = ../../../../Pictures/Pics4Games/TTTGameOverPlayerO.png; sourceTree = "<group>"; };
+		889699DC18828A1400190783 /* TTTGameOverPlayerX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTGameOverPlayerX.png; path = ../../../../Pictures/Pics4Games/TTTGameOverPlayerX.png; sourceTree = "<group>"; };
+		88A832AC18838C5500033037 /* TTTTwoPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTTwoPlayer.png; path = ../../../../Pictures/Pics4Games/TTTTwoPlayer.png; sourceTree = "<group>"; };
+		88A832AD18838C5500033037 /* TTTOnePlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTOnePlayer.png; path = ../../../../Pictures/Pics4Games/TTTOnePlayer.png; sourceTree = "<group>"; };
+		88A832AE18838C5500033037 /* TTTiPhone480x320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TTTiPhone480x320.png; path = ../../../../Pictures/Pics4Games/TTTiPhone480x320.png; sourceTree = "<group>"; };
 		AA4B96381880829B00B178B2 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4B963B1880829B00B178B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA4B963D1880829B00B178B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +86,6 @@
 		AA4B96621880829B00B178B2 /* TicTacToeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicTacToeTests-Info.plist"; sourceTree = "<group>"; };
 		AA4B96641880829B00B178B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA4B96661880829B00B178B2 /* TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeTests.m; sourceTree = "<group>"; };
-		AA4B96701880A4A500B178B2 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../../../../Downloads/CheckMate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4B96711880A4A500B178B2 /* CheckMate.framework in Frameworks */,
+				889699C51881A97400190783 /* CheckMate.framework in Frameworks */,
 				AA4B963E1880829B00B178B2 /* CoreGraphics.framework in Frameworks */,
 				AA4B96401880829B00B178B2 /* UIKit.framework in Frameworks */,
 				AA4B963C1880829B00B178B2 /* Foundation.framework in Frameworks */,
@@ -82,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		889699C61881A9E000190783 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				88A832AC18838C5500033037 /* TTTTwoPlayer.png */,
+				88A832AD18838C5500033037 /* TTTOnePlayer.png */,
+				88A832AE18838C5500033037 /* TTTiPhone480x320.png */,
+				889699D21882345800190783 /* TTTHelp.png */,
+				889699CD1881B7AD00190783 /* TTTGameOver.png */,
+				889699C91881B11D00190783 /* TTTXBlue2.png */,
+				889699CA1881B11D00190783 /* TTTORed.png */,
+				889699C71881A9F500190783 /* TTTField.png */,
+				889699DA18828A1400190783 /* TTTGameOverDraw.png */,
+				889699DB18828A1400190783 /* TTTGameOverPlayerO.png */,
+				889699DC18828A1400190783 /* TTTGameOverPlayerX.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		AA4B962F1880829B00B178B2 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +153,7 @@
 		AA4B963A1880829B00B178B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA4B96701880A4A500B178B2 /* CheckMate.framework */,
+				889699C41881A97400190783 /* CheckMate.framework */,
 				AA4B963B1880829B00B178B2 /* Foundation.framework */,
 				AA4B963D1880829B00B178B2 /* CoreGraphics.framework */,
 				AA4B963F1880829B00B178B2 /* UIKit.framework */,
@@ -116,11 +165,18 @@
 		AA4B96411880829B00B178B2 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				889699C61881A9E000190783 /* Images */,
 				AA4B964A1880829B00B178B2 /* AppDelegate.h */,
 				AA4B964B1880829B00B178B2 /* AppDelegate.m */,
 				AA4B964D1880829B00B178B2 /* Main.storyboard */,
+				889699D41882355200190783 /* HelpViewController.h */,
+				889699D51882355200190783 /* HelpViewController.m */,
+				889699CF1882320100190783 /* StartScreenViewController.h */,
+				889699D01882320100190783 /* StartScreenViewController.m */,
 				AA4B96501880829B00B178B2 /* ViewController.h */,
 				AA4B96511880829B00B178B2 /* ViewController.m */,
+				889699D71882646D00190783 /* TicTacToeBoard.h */,
+				889699D81882646D00190783 /* TicTacToeBoard.m */,
 				AA4B96531880829B00B178B2 /* Images.xcassets */,
 				AA4B96421880829B00B178B2 /* Supporting Files */,
 			);
@@ -232,9 +288,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A832B018838C5500033037 /* TTTOnePlayer.png in Resources */,
+				88A832B118838C5500033037 /* TTTiPhone480x320.png in Resources */,
+				889699DD18828A1400190783 /* TTTGameOverDraw.png in Resources */,
 				AA4B96541880829B00B178B2 /* Images.xcassets in Resources */,
+				88A832AF18838C5500033037 /* TTTTwoPlayer.png in Resources */,
 				AA4B96461880829B00B178B2 /* InfoPlist.strings in Resources */,
+				889699CE1881B7AD00190783 /* TTTGameOver.png in Resources */,
+				889699D31882345800190783 /* TTTHelp.png in Resources */,
+				889699DE18828A1400190783 /* TTTGameOverPlayerO.png in Resources */,
+				889699CC1881B11E00190783 /* TTTORed.png in Resources */,
 				AA4B964F1880829B00B178B2 /* Main.storyboard in Resources */,
+				889699CB1881B11E00190783 /* TTTXBlue2.png in Resources */,
+				889699DF18828A1400190783 /* TTTGameOverPlayerX.png in Resources */,
+				889699C81881A9F500190783 /* TTTField.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889699D61882355200190783 /* HelpViewController.m in Sources */,
+				889699D91882646D00190783 /* TicTacToeBoard.m in Sources */,
 				AA4B96521880829B00B178B2 /* ViewController.m in Sources */,
 				AA4B964C1880829B00B178B2 /* AppDelegate.m in Sources */,
 				AA4B96481880829B00B178B2 /* main.m in Sources */,
+				889699D11882320100190783 /* StartScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +455,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/gule/Downloads,
+					/Users/jhilbert/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TicTacToe/TicTacToe-Prefix.pch";
@@ -402,6 +473,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/gule/Downloads,
+					/Users/jhilbert/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TicTacToe/TicTacToe-Prefix.pch";
@@ -472,6 +544,7 @@
 				AA4B966C1880829B00B178B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA4B966D1880829B00B178B2 /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +553,7 @@
 				AA4B966F1880829B00B178B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
