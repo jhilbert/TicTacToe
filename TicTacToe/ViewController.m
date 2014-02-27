@@ -80,7 +80,7 @@
     [myTimer invalidate];
     myTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(oneSec:) userInfo:nil repeats:YES];
     timerActive = YES;
-    countdown = 10;
+    countdown = 15;
     countDownLabel.text = [NSString stringWithFormat:@"%i", countdown];
     countDownLabel.hidden = NO;
 }
@@ -176,30 +176,34 @@
         
         CGPoint myPoint = [panGestureRegocnizer locationInView:self.view];
         
-        if (panGestureRegocnizer.state == UIGestureRecognizerStateEnded)
+        if (CGRectContainsPoint(nextPlayerLabel.frame, myPoint))
         {
-            hitLabel = nil;
-            hitLabel = [self findLabelUsingPoint:myPoint];
             
-            if ([ttt setField:makeMoveToThisField marker:ttt.nextPlayer] == YES)
+            if (panGestureRegocnizer.state == UIGestureRecognizerStateEnded)
             {
-                [self makeMove:hitLabel];
-                [self computerMakeMove];
+                hitLabel = nil;
+                hitLabel = [self findLabelUsingPoint:myPoint];
+                
+                if ([ttt setField:makeMoveToThisField marker:ttt.nextPlayer] == YES)
+                {
+                    [self makeMove:hitLabel];
+                    [self computerMakeMove];
+                    
+                }
+                
+                
+                [UIView animateWithDuration:0.5f animations:^{
+                    nextPlayerLabel.transform = defaultTransform;}];
                 
             }
-            
-            
-            [UIView animateWithDuration:0.5f animations:^{
-                nextPlayerLabel.transform = defaultTransform;}];
-            
-        }
-        else
-        {
-            
-            CGPoint myPointForTransform = [panGestureRegocnizer translationInView:self.view];
-            
-            nextPlayerLabel.transform = CGAffineTransformMakeTranslation(myPointForTransform.x, myPointForTransform.y);
-            
+            else
+            {
+                
+                CGPoint myPointForTransform = [panGestureRegocnizer translationInView:self.view];
+                
+                nextPlayerLabel.transform = CGAffineTransformMakeTranslation(myPointForTransform.x, myPointForTransform.y);
+                
+            }
         }
         
     }

@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fod-kU-IMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="13"/>
+            <point key="canvasLocation" x="205" y="1"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -170,7 +170,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="664" y="13"/>
+            <point key="canvasLocation" x="740" y="-326"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="Etu-Ff-Ahh">
@@ -195,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsO-Hr-Rtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="13"/>
+            <point key="canvasLocation" x="1436" y="13"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YIh-cr-KXy">
